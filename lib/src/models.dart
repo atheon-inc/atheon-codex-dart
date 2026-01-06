@@ -14,8 +14,8 @@ class AtheonUnitFetchAndIntegrateModel {
   AtheonUnitFetchAndIntegrateModel({
     required this.query,
     required this.baseContent,
-    required this.includeAdUnits,
-    required this.useUserIntentAsFilter,
+    this.includeAdUnits = true,
+    this.useUserIntentAsFilter = false,
   });
 
   Map<String, dynamic> toJson() {
