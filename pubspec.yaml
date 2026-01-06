@@ -1,0 +1,11 @@
+name: atheon_codex
+description: Dart Package for Atheon
+version: 0.0.0
+homepage: https://github.com/atheon-inc/atheon-codex-dart
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  http: ^1.6.0
+dev_dependencies:
+  lints: ^6.0.0

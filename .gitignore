@@ -1,0 +1,45 @@
+# Dart tooling
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+.pub-preload-cache/
+
+# Build outputs
+build/
+out/
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+*.config.dart
+pubspec.lock
+
+# Coverage
+coverage/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# env file
+.env
+
+# Test artifacts
+test/.test_config
+
+# Custom ignore files/folders
+scratch*
+*credentials*.json
+*.ref
