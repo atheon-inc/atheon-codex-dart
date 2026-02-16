@@ -1,0 +1,39 @@
+name: Publish Codex Flutter to Pub.dev
+
+on:
+  push:
+    tags:
+      - "flutter-v*.*.*"
+  workflow_dispatch:
+
+jobs:
+  publish-codex-package:
+    runs-on: ubuntu-latest
+    environment: release
+    defaults:
+      run:
+        working-directory: packages/atheon_flutter
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Dart
+        uses: subosito/flutter-action@v2
+        with:
+          sdk: stable
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Check formatting
+        run: dart format --output=none --set-exit-if-changed .
+
+      - name: Analyze project
+        run: flutter analyze
+
+      - name: Publish package
+        run: flutter pub publish --force
