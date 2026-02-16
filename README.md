@@ -4,10 +4,10 @@ This repository contains the official Dart SDK and Flutter UI widgets for intera
 
 ## Packages
 
-| Package | Version | Description |
-| :--- | :--- | :--- |
-| [**atheon_codex**](./packages/atheon_codex) | `0.2.0` | Core Dart SDK for API integration. |
-| [**atheon_ui**](./packages/atheon_ui) | `0.1.0` | Flutter UI components and automated ad injection. |
+| Package | Description |
+| :--- | :--- |
+| [**atheon_codex**](./packages/atheon_codex) | Core Dart SDK for API integration. |
+| [**atheon_ui**](./packages/atheon_ui) | Flutter UI components and automated ad injection. |
 
 ## Monorepo Structure
 

@@ -1,6 +1,6 @@
 name: atheon_ui
 description: Flutter UI for Atheon
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/atheon-inc/atheon-codex-dart
 environment:
   sdk: ^3.8.0
