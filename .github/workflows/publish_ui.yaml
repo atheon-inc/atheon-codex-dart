@@ -1,9 +1,9 @@
-name: Publish Codex Flutter to Pub.dev
+name: Publish Codex UI to Pub.dev
 
 on:
   push:
     tags:
-      - "flutter-v*.*.*"
+      - "ui-v*.*.*"
   workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
     environment: release
     defaults:
       run:
-        working-directory: packages/atheon_flutter
+        working-directory: packages/atheon_ui
     permissions:
       id-token: write
       contents: read
