@@ -1,15 +1,18 @@
-name: Publish to Pub.dev
+name: Publish Codex SDK to Pub.dev
 
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "codex-v*.*.*"
   workflow_dispatch:
 
 jobs:
-  publish-package:
+  publish-codex-package:
     runs-on: ubuntu-latest
     environment: release
+    defaults:
+      run:
+        working-directory: packages/atheon_codex
     permissions:
       id-token: write
       contents: read

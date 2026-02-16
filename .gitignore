@@ -1,20 +1,22 @@
 # Dart tooling
 .dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
 .packages
-.pub/
-.pub-cache/
 .pub-preload-cache/
+.pub-cache/
+.pub/
 
 # Build outputs
 build/
 out/
 
 # Generated files
-*.g.dart
-*.freezed.dart
-*.mocks.dart
-*.config.dart
-pubspec.lock
+**/*.g.dart
+**/*.freezed.dart
+**/*.mocks.dart
+**/*.config.dart
+**/*.gr.dart
 
 # Coverage
 coverage/
@@ -24,22 +26,71 @@ coverage/
 .vscode/
 *.iml
 
+# Android
+**/android/app/libs/
+**/android/app/src/main/assets/
+**/android/captures/
+**/android/gradle-wrapper.jar
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/generated/
+**/android/.gradle/
+
+# iOS / macOS
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral/
+**/Pods/
+**/.symlinks/
+
+# Exceptions to above rules.
+!**/ios/Flutter/AppFrameworkInfo.plist
+
 # macOS
 .DS_Store
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral
 
 # Windows
 Thumbs.db
+**/windows/flutter/ephemeral/
 
-# Logs
+# Linux
+**/linux/flutter/ephemeral/
+
+# Web Specific
+lib/generated_plugin_registrant.dart
+**/web/icons/Icon-192.png
+**/web/icons/Icon-512.png
+**/web/favicon.png
+
+# Miscellaneous
+*.class
 *.log
-
-# env file
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
 .env
-
-# Test artifacts
-test/.test_config
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
 
 # Custom ignore files/folders
 scratch*
 *credentials*.json
 *.ref
+packages/**/pubspec.lock
+!example/pubspec.lock
