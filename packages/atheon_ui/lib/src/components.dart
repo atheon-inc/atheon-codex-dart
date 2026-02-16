@@ -534,9 +534,6 @@ class _AtheonContainerState extends State<AtheonContainer> {
       };
       if (_originHeader != null) headers["X-Atheon-Origin"] = _originHeader!;
 
-      debugPrint('Headers data: $headers');
-      debugPrint('Payload data: $payload');
-
       await _client!.post(
         Uri.parse("https://api.atheon.ad/v1/track-events/"),
         headers: headers,
